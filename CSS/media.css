@@ -6,8 +6,9 @@
 
 @media screen and (min-width: 768px) { 
     .container{
-        max-width: 768px;
+        max-width: 100%;
     }
+    /* ----------------------------------Articles Part --------------------- */
 }
 
 @media screen and (min-width: 1024px) { 
@@ -74,6 +75,9 @@
     #hero-section .nav-bar .nav button i {
         display: none;
     }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 768px){
     #hero-section .hero .content{
         display: flex;
         flex-direction: row;
@@ -106,4 +110,79 @@
         width: 580px;
         height: 400px;
     }
+
+    /* ----------------------------------Articles Part --------------------- */
+    #articles .art{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        gap: 40px;
+    }
+    #articles .art .left{
+        width: 750px;
+    }
+    #articles .art .left .articles .card{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        width: fit-content;
+    }
+    #articles .art .left .left-head{
+        display: flex;
+        justify-content: space-between;
+    }
+    #articles .art .left .left-head .badge{
+        display: block;
+        padding: 8px 16px;
+    }
+    #articles .art .left .left-head .badge span {
+        font-size: 16px;
+        font-weight: 700;
+        transform: rotate(8deg);
+
+    }
+    #articles .art .left .articles .card .image{
+        margin-right: 20px;
+    }
+    #articles .art .left .articles .card .content h3{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    #articles .art .left .articles .card .content p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        margin-bottom: 16px;
+    }
+    #articles .art .left .articles .card .content .badge{
+        padding: 4px 12px;
+    }
+    #articles .art .left .articles .card .content .badge span{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    #articles .art .trending,
+    #articles .art .categories{
+        padding: 32px;
+    }
+    #articles .art .left .card .content .issuer{
+        flex-direction: row;
+        gap: 24px;
+    }
+    #articles .art .left .card .content .issuer span{
+        flex-direction: row;
+        font-size: 14px;
+        gap: 24px;
+    }
+    #articles .art .right{
+        height: 110vh;
+    }
+    #articles .art .right .content{
+        position: sticky;
+        top: 80px;
+    }
 }
+    
