@@ -15,6 +15,95 @@
         background-color: #FFF085;
     }
     .container{
-        max-width: 1500px;
+        max-width: 1280px;
+    }
+    .nav-bar .container {
+        width: 100%;
+    }
+    #hero-section .nav-bar .nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    #hero-section .nav-bar .menu-bars,
+    #hero-section .nav-bar .links .menu-head{
+        display: none;
+    }
+    #hero-section .nav-bar .links{
+        display: flex;
+        justify-content: space-between;
+    }
+    #hero-section .nav-bar .links ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    #hero-section .nav-bar .links ul li a{
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    #hero-section .nav-bar .links ul li a:hover{
+        color: #FF7A6C;
+        transition: all 0.3s;
+    }
+    #hero-section .nav-bar .links ul li i{
+        font-size: 9px;
+        color: #D1D5DC;
+    }
+
+    #hero-section .nav-bar .nav button{
+        margin-left: 40px;
+        border: 3px solid #000;
+        background-color: #FFD15B;
+        font-size: 14px;
+        padding: 16px 8px;
+        border-radius: 80px;
+        font-weight: 700;
+        transition: all 0.4s;
+        display: block;
+    }
+    #hero-section .nav-bar .nav button:hover{
+        transform: translate(3%,3%);
+        transition: all 0.4s;
+    }
+    #hero-section .nav-bar .nav button i {
+        display: none;
+    }
+    #hero-section .hero .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;   
+    }
+    #hero-section .hero .content .text{
+        width: 50%;
+    }
+    #hero-section .hero .content .text .hero-headers span{
+    font-size: 72px;
+    font-weight: 900;
+    text-shadow: 3px 3px #33301B;
+    }
+    #hero-section .hero .content .text .paragraph{
+        padding: 16px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    #hero-section .hero .content .text .buttons{
+        display: flex;
+        gap: 16px;
+    }
+    #hero-section .hero .content .text .buttons span{
+        padding: 16px 32px;
+    }
+
+    #hero-section .hero .content .photo img{
+        width: 580px;
+        height: 400px;
     }
 }
