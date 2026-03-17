@@ -18,9 +18,35 @@ img{
 }
 html{
     font-family: EXO , sans-serif;
+    scroll-behavior: smooth;
 }
 
-
+.head{
+    text-align: center;
+}
+.head{
+    margin-bottom: 48px;
+    position: relative;
+}
+.head::after{
+    content: "";
+    width: 10%;
+    position: absolute;
+    height: 10px;
+    background-color: #000;
+    bottom: -30px;
+    left: 45%;
+}
+.head h2{
+    font-size: 41px;
+    font-weight: 900;
+}
+.head p{
+    color: #525650;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+}
 
 .badge{
     font-weight: 700;
@@ -395,6 +421,77 @@ html{
 #articles .art .right .categories .boxes .four:hover{background-color: rgba(135, 193, 255, 1);}
 #articles .art .right .categories .boxes .five:hover{background-color: rgba(215, 183, 255, 1);}
 
-
-
 /* ?---------------------------------------End of articles section -------------------- */
+
+#authors{
+    background-color: #FFD230;
+    border-block: 4px solid #000;
+    padding-block: 80px;
+}
+
+#authors .persons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#authors .persons .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#authors .persons .card:first-child:hover h3{color: #FB2C36; transition: all 0.3s;}
+#authors .persons .card:nth-last-child(2):hover h3{color: #2B7FFF; transition: all 0.3s;}
+#authors .persons .card:nth-last-child(1):hover h3{color: #AD46FF; transition: all 0.3s;}
+
+
+#authors .card .image img{
+    width: 200px;
+}
+#authors .card h3{
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+#authors .card .sub{
+    font-weight: 700;
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 5px;
+}
+#authors .card .paragraph{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#authors .card ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#authors .card ul li{
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #000;
+    color: white;
+    background-color: #000;
+}
+#authors .card ul li:hover{
+    box-shadow: 5px 5px #000;
+    transform: translate(-5px , -5px);
+    transition: all 0.4s;
+}
+
+
+
+#authors .card ul .ln:hover{ background-color: #0A66C2;}
+#authors .card ul .insta:hover{ background-color: #FB02AC;}
+
+/* ----------------------------------Community-------------------------- */
+#community{
+    padding-block: 80px;
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #000;
+}
