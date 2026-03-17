@@ -493,5 +493,95 @@ html{
 #community{
     padding-block: 80px;
     background-color: #FFFFFF;
-    border-bottom: 4px solid #000;
+}
+#community .com{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#community .com .benefits{
+    margin-bottom: 30px;
+}
+
+#community .com .benefits div{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+#community .com .left h3{
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#community .com .left p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+#community .com .benefits div .icon {
+    padding: 10px;
+    background-color: #000;
+    border: 2px solid #000;
+    width: fit-content;
+}
+
+#community .com .benefits div .icon i{
+    color: white;
+
+}
+#community .com .benefits div span{
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#community .com .right{
+    padding: 40px;
+}
+
+#community .com .right h3{
+    font-weight: 900;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#community .com .right .card{
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    padding: 16px 24px;
+}
+
+#community .com .right .card .person{
+    display: flex;
+    gap: 20px;
+}
+
+#community .com .right .card .person .image{
+    border: 1px solid #000;
+    height: fit-content;
+
+}
+
+#community .com .right .card .person .image img{
+    width: 50px;
+}
+
+#community .com .right p{
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#community .com .right .card .person h4{
+    font-weight: 700;
+    font-size: 18px;
+}
+#community .com .right .card .person span{
+    font-weight: 400;
+    font-size: 10px;
+    color: #525252;
 }
