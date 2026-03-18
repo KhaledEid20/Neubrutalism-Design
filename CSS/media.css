@@ -233,5 +233,15 @@
     #community .com .benefits .icon{
         padding: 30px;
     }
-
+    footer .foot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .copyright{
+        margin-top: 50px;
+    }
+    footer .copyright{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
