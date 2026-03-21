@@ -25,6 +25,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        align-items: center;
     }
 
     #hero-section .nav-bar .menu-bars,
@@ -33,12 +34,24 @@
     }
     #hero-section .nav-bar .links{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        
     }
     #hero-section .nav-bar .links ul{
         display: flex;
+        flex-direction: row;
+        align-items: center;
         gap: 20px;
         list-style: none;
+        margin: auto;
+    }
+
+    #hero-section .nav-bar .links ul li > i{
+        display: inline-block;
+    }
+
+    #hero-section .nav-bar .links ul + button{
+        display: none;
     }
 
     #hero-section .nav-bar .links ul li a{

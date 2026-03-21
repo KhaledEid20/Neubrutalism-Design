@@ -154,14 +154,104 @@ html{
     border-radius: 4px;
 }
 
+/* #hero-section .nav-bar .links .cont {
+    width: 100%;
+} */
+
+#hero-section .nav-bar .menu-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-block: 2px solid #000;
+    padding-block: 15px;
+    width: 100%;
+}
+#hero-section .nav-bar .menu-head .icon{
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #000;
+}
+#hero-section .nav-bar .menu-head .icon:hover{
+    background-color: #FFE2E2;
+}
+#hero-section .nav-bar .menu-head .icon:hover i {
+    color: red;
+    transition: all 0.2s ;
+}
+
+#hero-section .nav-bar .menu-head h3{
+    font-size: 21px;
+    font-weight: 900;
+}
+
+
 #hero-section .nav-bar .menu-bars:hover{
     transform: translate(-3%,-3%);
     transition: all 0.4s;
 }
 
+#hero-section .nav-bar .menu-bars:focus + .links {
+    display: flex;
+    position: absolute;
+    background-color: #FFF;
+    top: -10px;
+    right: 0px;
+    height: 100vh;
+    padding: 20px;
+    z-index: 999999;
+    width: 60%;
+    border-left: 3px solid #000;
+    transition: all 0.4s ease;
+}
+
 #hero-section .nav-bar .links{
     display: none;
 }
+
+
+#hero-section .nav-bar .links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+#hero-section .nav-bar .links ul + button{
+    margin-top: 40px;
+    display: block;
+    padding: 12px 24px;
+    background-color: #FFD15B;
+    border: 3px solid #000;
+    margin-inline: auto;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 3px 3px #000;
+    transition: all 0.2s;
+
+}
+#hero-section .nav-bar .links ul + button:hover{
+    transform: translate(0px , -5px);
+    transition: all 0.2s;
+}
+
+#hero-section .nav-bar .links ul li > i{
+    display: none;
+}
+#hero-section .nav-bar .links ul li > a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+#hero-section .nav-bar .links ul li > a:hover{
+    color: #FF7A50;
+    transition: all 0.3s;
+}
+
 
 /* ?----------------------Hero Section-------------------------- */
 #hero-section .hero{
@@ -534,10 +624,8 @@ html{
     border: 2px solid #000;
     width: fit-content;
 }
-
 #community .com .benefits div .icon i{
     color: white;
-
 }
 #community .com .benefits div span{
     font-weight: 600;
