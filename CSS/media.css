@@ -8,6 +8,10 @@
     .container{
         max-width: 100%;
     }
+    #hero-section .nav-bar .menu-bars:focus + .links{
+        width: 30%;
+        
+    }
     /* ----------------------------------Articles Part --------------------- */
 }
 
